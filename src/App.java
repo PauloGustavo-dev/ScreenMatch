@@ -8,6 +8,7 @@ public class App {
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
         meuFilme.avalia(10);
-        System.out.println(meuFilme.pegaMedia());
+        System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
+        System.out.println("Média: " + meuFilme.pegaMedia());
     }   
 }
