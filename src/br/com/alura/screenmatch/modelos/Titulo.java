@@ -22,6 +22,15 @@ public class Titulo {
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
     }
+
+    public boolean isIncluidoNoPlano() {
+        return incluidoNoPlano;
+    }
+
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
+    }
+
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
     }
