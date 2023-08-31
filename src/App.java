@@ -7,9 +7,7 @@ import br.com.alura.screenmatch.modelos.Serie;
 
 public class App {
     public static void main(String[] args){
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("O poderoso chefão");
-        meuFilme.setAnoDeLancamento(1970);
+        Filme meuFilme = new Filme("O poderoso chefão",1970);
         meuFilme.setDuracaoEmMinutos(180);
 
         meuFilme.exibeFichaTecnica();
@@ -18,9 +16,7 @@ public class App {
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println("Média: " + meuFilme.pegaMedia());
 
-        Serie serie = new Serie();
-        serie.setNome("La Casa de Papel");
-        serie.setAnoDeLancamento(2017);
+        Serie serie = new Serie("La Casa de Papel",2017);
         serie.setIncluidoNoPlano(true);
         serie.setAtiva(true);
         serie.setTemporada(5);
@@ -35,9 +31,7 @@ public class App {
         FiltroRecomendacao filtro = new FiltroRecomendacao();
         filtro.filtra(meuFilme);
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Oppenheimer");
-        outroFilme.setAnoDeLancamento(2023);
+        Filme outroFilme = new Filme("Oppenheimer",2023);
         outroFilme.setDuracaoEmMinutos(180);
         outroFilme.avalia(9);
 
