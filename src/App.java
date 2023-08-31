@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Filme;
@@ -32,5 +34,19 @@ public class App {
 
         FiltroRecomendacao filtro = new FiltroRecomendacao();
         filtro.filtra(meuFilme);
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Oppenheimer");
+        outroFilme.setAnoDeLancamento(2023);
+        outroFilme.setDuracaoEmMinutos(180);
+        outroFilme.avalia(9);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        
+        System.out.println(listaDeFilmes);
     }   
 }
